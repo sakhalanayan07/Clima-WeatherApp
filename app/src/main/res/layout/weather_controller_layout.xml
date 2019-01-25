@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mahavir.clima_completed.WeatherController">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:id="@+id/mybackground"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="91dp"
+            android:text="@string/default_location"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/refresh"
+            android:textSize="40sp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/tempTV"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp"
+            android:text="@string/default_temp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/refresh"
+            android:textSize="90sp"
+            android:layout_alignParentLeft="true" />
+
+        <ImageButton
+            android:id="@+id/changeCityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/change_city_description"
+            android:src="@drawable/change_city_symbol_small" />
+
+        <ImageView
+            android:id="@+id/weatherSymbolIV"
+            android:layout_width="match_parent"
+            android:layout_height="251dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tempTV"
+            android:layout_marginTop="76dp"
+            android:contentDescription="@string/weather_description"
+            android:src="@drawable/dunno"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
